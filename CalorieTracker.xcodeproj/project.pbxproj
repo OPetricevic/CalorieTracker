@@ -11,6 +11,11 @@
 		FF12ABBA2AF39FF500791E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12ABB92AF39FF500791E65 /* ContentView.swift */; };
 		FF12ABBC2AF39FF700791E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF12ABBB2AF39FF700791E65 /* Assets.xcassets */; };
 		FF12ABBF2AF39FF700791E65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF12ABBE2AF39FF700791E65 /* Preview Assets.xcassets */; };
+		FF12ABC82AF3A05900791E65 /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF12ABC62AF3A05900791E65 /* FoodModel.xcdatamodeld */; };
+		FF12ABCA2AF3A0EB00791E65 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12ABC92AF3A0EB00791E65 /* DataController.swift */; };
+		FF12ABCD2AF3A35600791E65 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12ABCC2AF3A35600791E65 /* EditFoodView.swift */; };
+		FF7CF2942AF4D42100CBEDB5 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CF2932AF4D42100CBEDB5 /* AddFoodView.swift */; };
+		FF7CF2962AF4D55400CBEDB5 /* TimeFormatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CF2952AF4D55400CBEDB5 /* TimeFormatingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		FF12ABB92AF39FF500791E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF12ABBB2AF39FF700791E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF12ABBE2AF39FF700791E65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF12ABC72AF3A05900791E65 /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		FF12ABC92AF3A0EB00791E65 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FF12ABCC2AF3A35600791E65 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		FF7CF2932AF4D42100CBEDB5 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		FF7CF2952AF4D55400CBEDB5 /* TimeFormatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 		FF12ABAB2AF39FF500791E65 = {
 			isa = PBXGroup;
 			children = (
+				FF12ABB72AF39FF500791E65 /* CalorieTrackerApp.swift */,
 				FF12ABB62AF39FF500791E65 /* CalorieTracker */,
 				FF12ABB52AF39FF500791E65 /* Products */,
 			);
@@ -51,8 +62,9 @@
 		FF12ABB62AF39FF500791E65 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
-				FF12ABB72AF39FF500791E65 /* CalorieTrackerApp.swift */,
-				FF12ABB92AF39FF500791E65 /* ContentView.swift */,
+				FF7CF2912AF4D3FB00CBEDB5 /* ViewModel */,
+				FF12ABCB2AF3A33800791E65 /* Views */,
+				FF12ABC52AF3A03E00791E65 /* DataModel */,
 				FF12ABBB2AF39FF700791E65 /* Assets.xcassets */,
 				FF12ABBD2AF39FF700791E65 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				FF12ABBE2AF39FF700791E65 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF12ABC52AF3A03E00791E65 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF12ABC62AF3A05900791E65 /* FoodModel.xcdatamodeld */,
+				FF12ABC92AF3A0EB00791E65 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		FF12ABCB2AF3A33800791E65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF12ABB92AF39FF500791E65 /* ContentView.swift */,
+				FF12ABCC2AF3A35600791E65 /* EditFoodView.swift */,
+				FF7CF2932AF4D42100CBEDB5 /* AddFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF7CF2912AF4D3FB00CBEDB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7CF2952AF4D55400CBEDB5 /* TimeFormatingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF12ABBA2AF39FF500791E65 /* ContentView.swift in Sources */,
+				FF12ABCA2AF3A0EB00791E65 /* DataController.swift in Sources */,
+				FF7CF2942AF4D42100CBEDB5 /* AddFoodView.swift in Sources */,
 				FF12ABB82AF39FF500791E65 /* CalorieTrackerApp.swift in Sources */,
+				FF12ABC82AF3A05900791E65 /* FoodModel.xcdatamodeld in Sources */,
+				FF7CF2962AF4D55400CBEDB5 /* TimeFormatingViewModel.swift in Sources */,
+				FF12ABCD2AF3A35600791E65 /* EditFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF12ABC62AF3A05900791E65 /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF12ABC72AF3A05900791E65 /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = FF12ABC72AF3A05900791E65 /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FF12ABAC2AF39FF500791E65 /* Project object */;
 }
